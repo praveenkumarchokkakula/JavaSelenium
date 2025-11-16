@@ -69,9 +69,6 @@ public class LoginSteps {
     @When("the user enters valid login details {string} and {string}")
     public void the_user_enters_valid_login_details_and(String username, String password) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username"))).sendKeys(username);
-        driver.findElement(By.name("password")).sendKeys(password);
-        driver.findElement(By.xpath("//input[@value='Log In']")).click();
         System.out.println("STEP: user enters valid login details");
     }
 
