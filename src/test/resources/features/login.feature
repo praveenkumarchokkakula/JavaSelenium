@@ -7,10 +7,6 @@ Scenario Outline: user login
   When the user enters valid login details "<username>" and "<password>"
   Then the user should be directed to user home page
 
-#    Examples: Excel Sheet = LoginData.xlsx, Sheet = Sheet1
-#      | username | password |
-#      | <Data from Excel Column 'username'> | <Data from Excel Column 'password'> |
-
     Examples:
       | username    | password  |
       | john   | demo   |
